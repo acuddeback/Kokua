@@ -1,0 +1,47 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<title>Cold Caller</title> <!-- slide out menu on left side -->
+		
+		
+		<script>
+				
+				function storeInfo() {
+					var form = document.getElementById("form");
+					var names = form.elements[0].value;
+					localStorage.setItem('name', names);
+				}
+				function getData() {
+					var container = document.getElementById('loadedData');
+					container.innerHTML = localStorage.getItem('name');
+				}
+				
+					
+			</script>
+			
+	</head>
+	<body>
+
+
+			<form id="form">
+				
+				Number of students: <br>
+				<input type="text" name="numberofstudents"><br>
+			</form>
+				<button onclick="storeInfo()">Submit</button><br>
+				<p></p>
+				<p>
+				<button onclick="getData()">Students in your class</button></p>
+				
+				
+				<p id="loadedData">
+				</p>
+			
+		</body>
+	</html>
+	
+	
+	
+	
+	
+	
