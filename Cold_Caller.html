@@ -2,20 +2,21 @@
 	<head>
 		<title> 						
 		Cold Caller
-		</title> 						<!--tab name-->
+		</title> <!--tab name-->
 		
-		<script src="pick.js" type="text/javascript"></script> 			  <!--embeds the Js file-->
-	
+		<script src="pick.js" type="text/javascript"></script> <!--embeds the Js file-->
 	</head>
 	<body>
-		<h1>Cold Caller</h1>                <!--head-->
-		<div id="loaded_data"></div>  <!--location and style of lists-->
+		<h1>
+		Cold Caller
+		</h1> <!--head-->
+		<div id="loaded_data"></div> <!--location and style of lists-->
 		
 		<p>
 			<form id="form1">
 				Type your student's name: <input type="text" name = "user's name"/>                  <!--receives input-->
 			</form>
-				<button onclick="save_data()">Submit</button>            <!--submit data-->
+				<button onclick="add_names()">Submit</button>            <!--submit data-->
 		</p>
 		<p>
 		<button onclick="pick()">Cold Call</button>           <!--cold call picks a random name-->

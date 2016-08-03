@@ -1,5 +1,5 @@
 var names = [
-	
+
 	]; 
 
 function pick() {
@@ -7,14 +7,14 @@ function pick() {
 	document.getElementById('call').innerHTML = picked
 }   				       	 //picks element from array
 
-function save_data(){
+function add_names(){
 	var form = document.getElementById("form1");  								   //receives input
 	var name = form.elements[0].value;
 	console.log("Got name" + name + " from form");
-	localStorage.setItem('test-name', name);
 	names.push(name);               //append list here:
+	localStorage.setItem("class", names);
 	var container = document.getElementById('loaded_data');
-	container.innerHTML = localStorage.getItem("names");
+	container.innerHTML = localStorage.getItem("class");
 }
 
 function load_data(){
