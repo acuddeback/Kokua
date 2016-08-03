@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<title> 						<!--tab name-->
+		Cold Caller
+		</title>
+		
+		<script src="pick.js" type="text/javascript"></script> 			  <!--embeds the Js file-->
+	
+	</head>
+	<body>
+		<h1>Cold Caller</h1>                <!--head-->
+		<button id="caller" onclick="pick()">Choose here!</button> 	<!--randomly picks from array names-->
+		<div id="call"></div>  <!--location and style of choosen name-->
+		
+		<p>
+			<form id="form1">
+				Type your student's name: <input type="text" name = "user's name"/> <!--receives input-->
+			</form>
+				<button onclick="save_data()">Submit</button> <!--submit data-->
+		</p>
+		<p>
+		<button onclick="load_data()">Cold Call</button>
+		</p>
+		<p id="loaded_data">
+		</p>
+		
+		<!-- entry boxes
+		<form>
+		First name:<br>
+		<input type="text" name="firstname"><br>
+		Last name:<br>
+		<input type="text" name="lastname">
+		</form>
+		-->
+	</body>
