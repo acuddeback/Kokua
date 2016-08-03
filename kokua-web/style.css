@@ -108,11 +108,12 @@ p{
 	text-align: center;
 	font-family: 'Avro';
 	color: white;
-	font-size: 23px;
+	font-size: 18px;
 	
 }
-body {font-size:20px;
+body {font-size:15px;
 font-family: 'Arvo';}
+
 
 .button {
     background-color: #4CAF50;
@@ -126,5 +127,4 @@ font-family: 'Arvo';}
     margin: 4px 2px;
     cursor: pointer;
 }
-
 
