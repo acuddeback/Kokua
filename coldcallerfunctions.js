@@ -12,16 +12,17 @@ function add_names(){
 	var name = form.elements[0].value;
 	console.log("Got name" + name + " from form");
 	names.push(name);               //append list here:
-	localStorage.setItem("class", names);
+	localStorage.setItem("class",name);
 	var container = document.getElementById('loaded_data');
-	container.innerHTML = localStorage.getItem("class");
+	container.innerHTML += localStorage.getItem("class") + "<br>";
+	//stop it from printing whole list
 }
 
-function deleteFromList() {
+function deleteFromList(){
 	var form = document.getElementById("form1");  								   //receives input
 	var name = form.elements[0].value;
 	console.log("Got name" + name + " from form");
-	names.pop(name);
+	names.pop(name);               //removes name from list here:
 	localStorage.setItem("class", names);
 	var container = document.getElementById('loaded_data');
 	container.innerHTML = localStorage.getItem("class");
