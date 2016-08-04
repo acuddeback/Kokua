@@ -31,13 +31,11 @@ function deleteFromList(){
 	var container = document.getElementById('loaded_data');
 	container.innerHTML = localStorage.getItem("class");
 	
+	
 }
 
-function selectDelete() {
-	var form = document.getElementById("form1");
-	var name = form.elements[0].value;
-	console.log("Got name" + name + " from form");
-}
+
+
 
 /* <form id="form2">
 			<input type="checkbox" name= "names"> name
