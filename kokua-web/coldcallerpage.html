@@ -125,7 +125,7 @@ input[type=text] {
 
 	<head><center>
 		
-		<script src="pick.js" type="text/javascript"></script> <!--embeds the Js file-->
+		<script src="coldcallerfunctions.js" type="text/javascript"></script> <!--embeds the Js file-->
 	</head>
 	<body>
 		
@@ -135,17 +135,26 @@ input[type=text] {
 			<form id="form1">
 				<p>Type your student's name:</p>
 				<input type="text" name = "user's name"/>                  <!--receives input-->
-			</form></p>
+			</form>
 				<button class= "button" onclick="add_names()">Submit</button>            <!--submit data-->
-		
-		
+		</p>
+		<p>
 		<button class ="button" onclick="pick()">Cold Call</button>           <!--cold call picks a random name-->
-		
+		</p>
 		<p id="call">
 		</p>      
+<p>
+		<button onclick="deleteFromList()"> Delete Last Name From List</button>
+		</p>		<!--displays cold called name-->
 		
-		<button class="button" onclick="deleteFromList()"> Delete Last Name From List</button>
-		
+		<!-- entry boxes
+		<form>
+		First name:<br>
+		<input type="text" name="firstname"><br>
+		Last name:<br>
+		<input type="text" name="lastname">
+		</form>
+		-->
 	</center></body>
 	
 	</html>

@@ -1,4 +1,4 @@
-body {color:white; , sans-serif;
+body {color:white; font-family: 'Arvo';, sans-serif;
   background-image: /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffff7a+0,4fe2c0+50,53cbed+89 */
 background: rgb(255,255,122); /* Old browsers */
 background: -moz-linear-gradient(left,  rgba(255,255,122,1) 0%, rgba(79,226,192,1) 50%, rgba(83,203,237,1) 89%); /* FF3.6-15 */
@@ -114,8 +114,9 @@ p{
 body {font-size:15px;
 font-family: 'Arvo';}
 
-p1 {font-size:25px;
+h6 {font-size:30px;
 font-family: 'Arvo';}
+
 
 .button {
     background-color: #4CAF50;
