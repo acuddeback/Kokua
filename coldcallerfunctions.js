@@ -19,11 +19,15 @@ function add_names(){
 }
 
 function deleteFromList(){
+
 	var form = document.getElementById("form1");  								   //receives input
 	var name = form.elements[0].value;
 	console.log("Got name" + name + " from form");
 	names.pop(name);               //removes name from list here:
 	localStorage.setItem("class", names);
 	var container = document.getElementById('loaded_data');
-	container.innerHTML = localStorage.getItem("class");
+	container.innerHTML += localStorage.getItem("class", -1) + "<br>";
+	/*for (i = 0; i < names.length; i++) {
+		"<br>";
+	}*/
 }
