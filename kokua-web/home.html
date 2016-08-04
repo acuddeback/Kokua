@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<link rel="stylesheet" href="style.css">
+
+
+	<head>
+		<title>Kokua</title> <!-- slide out menu on left side -->
+		<link rel="stylesheet" href="other_style.css">
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Arvo">
+		<meta name= "viewport" content="width-device-width, initial-scale=1">
+		
+	</head>
+	
+	
+	<body class="menu">
+		<header>
+			<a href="#" class = "menu-toggle"><div class="container" onclick="myFunction(this)">
+					<div class="bar1"></div>
+					<div class="bar2"></div>
+					<div class="bar3"></div>
+					</div></a>
+			<nav class="menu-side">
+				<ul>
+  <center><li><a class="active" href="#KOKUA">KOKUA</a></li>
+  <br><br><li><a href="home.html">home</a></li><br><br>
+  <li><a href="coldcaller.html">cold caller</a></li><br><br>
+  <li><a href="groupgenerator.html">group generator</a></li><br><br>
+  <li><a href="comments.html">comments</a></li><br><br>
+  <li><a href="aboutus.html">about us</a></li><br><br></center>
+</nav>
+		<h6>Home</h6>
+		<p> This educational website provides educators with a cold callers that randomly calls a students name and a group generator to randomly sort a group together. </p>
+</ul>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script>
+		(function() { 
+			var body = $('body');
+			$('.menu-toggle').bind('click', function() {
+				body.toggleClass('menu-open');
+				return false;
+			
+			});	
+		})();
+		
+	</script>
+	
+	<script> 
+	function myFunction(x) {
+    x.classList.toggle("change");
+}
+	
+	</script>
+	
+	<style> 
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: #53cbed;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: white;
+    color: #53cbed;
+}
+</style>
+
+	</body>
+	
+	</html>
