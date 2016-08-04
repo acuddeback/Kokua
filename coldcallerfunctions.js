@@ -27,3 +27,4 @@ function deleteFromList(){
 	var container = document.getElementById('loaded_data');
 	container.innerHTML = localStorage.getItem("class");
 }
+

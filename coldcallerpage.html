@@ -11,24 +11,50 @@
 		<h1>
 		Cold Caller
 		</h1> <!--head-->
-		
+		<h2>
+		Class
+		</h2>
 		
 		<p>
-			<form id="form1">
-				Type your student's name: <input type="text" name = "user's name"/>                  <!--receives input-->
-			</form><br>
+			
 		<div id="loaded_data"></div><br> <!--location and style of lists-->
-				<button onclick="add_names()">Submit</button>            <!--submit data-->
+				
 		</p>
-		<p>
+		<form id="form1">
+				Student name: <input type="text" name = "user's name"/>                  <!--receives input-->
+			</form><br>
+			<button onclick="add_names()">Submit</button>            <!--submit data-->
+		<input type="text" id="txtSearch" onkeypress="return searchKeyPress(event);" />
+<input type="button" id="btnSearch" Value="Search" onclick="add_names();" />
+
+<script>
+function searchKeyPress(e)
+{
+    // look for window.event in case event isn't passed in
+    e = e || window.event;
+    if (e.keyCode == 13)
+    {
+        document.getElementById('btnSearch').click();
+        return false;
+    }
+    return true;
+}
+</script>
+
 		<button onclick="pick()">Cold Call</button>           <!--cold call picks a random name-->
-		</p>
+
 		<p id="call">
 		</p>           <!--displays cold called name-->
 		
+		
+		
+		
+		<!--
 		<p>
 		<button onclick="deleteFromList()"> Delete Last Name From List</button>
 		</p>
+		-->
+		
 		<!-- entry boxes
 		<form>
 		First name:<br>
