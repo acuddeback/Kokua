@@ -1,0 +1,61 @@
+start = '''
+You wake up one morning and find that you aren’t in your bed; you aren’t even in your room.
+You’re in the middle of a giant maze.
+A sign is hanging from the ivy: “You have one hour. Don’t touch the walls.”
+There is a hallway to your right and to your left.
+'''
+
+
+print(start)
+
+
+print("Type 'left' to go left or 'right' to go right.")
+user_input = input()
+if user_input == "left":
+    print("""
+		You decide to go left and walk straight into a spider web. Do you...
+				a) keep walking, or
+				b) brush the spiderweb out of your eyes?
+			Enter a or b to choose.""") # finished the story by writing what happens
+		user_input = input()
+		if user_input == "a" or "A": 
+			print("""
+			GAME OVER!
+			The spiderweb blinds you and walk straigh into a wall.
+			""")
+		elif user_input == "b" or "B":
+			print("""
+			You brush the spiderweb out of your eyes and realize that you are almost touching a wall. You turn to your right and see a sword and a flask of water. Which do you choose? 
+				a) the sword, or
+				b) the flask of water
+			Enter a or b to choose.
+			""")
+			user_input = input()
+			if user_input == "a" or "A":
+				weapon = "sword""
+			elif user_input == "b" or "B":
+				weapon = "water"
+			print("""
+			You continue on your journey through the maze, sometimes turning left, sometimes right. 
+			Finally, you arrive at the exit, but, the Wicked Witch of the West guards the door! 
+			Do you... 
+				a)stay and fight, or 
+				b) turn to find another exit?
+			""")
+			user_input = input()
+			if user_input == "a" or "A":
+				if weapon == "sword":
+					print("""
+					GAME OVER! 
+					The Wicked Witch of the West breaks your sword and kills you.
+					""")
+				elif weapon == "water":
+					print("""
+					YOU WIN!
+					You use your water to kill the Wicked Witch of the West and exit the maze.
+					""")
+			elif user_input == "b" or "B":
+		done = True
+elif user_input == "right":
+    print("You choose to go right and ...") # finished the story writing what happens
+    done = True
