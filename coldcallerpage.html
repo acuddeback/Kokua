@@ -12,22 +12,26 @@
 		Cold Caller
 		</h1> <!--head-->
 		
+		<p>
+		To add a name to your class list, press add.
+		To pick a random name, press cold call.
+		To delete the last item from the list, press delete.
+		</p>
 		
 		<p>
-			<form id="form1">
-				Type your student's name: <input type="text" name = "user's name"/>                  <!--receives input-->
-			</form><br>
-		<div id="loaded_data"></div><br> <!--location and style of lists-->
-				<button onclick="add_names()">Submit</button>            <!--submit data-->
+			<div id="loaded_data"></div><br> <!--location and style of lists-->
+			
+			<button onclick="popup()"> Add Name</button>   <!--adds name to list-->
+				
 		</p>
 		<p>
-		<button onclick="pick()">Cold Call</button>           <!--cold call picks a random name-->
+			<button onclick="pick()">Cold Call</button>           <!--cold call picks a random name-->
 		</p>
 		<p id="call">
 		</p>           <!--displays cold called name-->
-		
+
 		<p>
-		<button onclick="deleteFromList()"> Delete Last Name From List</button>
+			<button onclick="deleteFromList()"> Delete</button>
 		</p>
 		<!-- entry boxes
 		<form>
