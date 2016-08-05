@@ -14,7 +14,17 @@
 		<h2>
 		Class
 		</h2>
-		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script>
+		$(document).ready(function(){
+			$(".btn2").click(function(){
+				$("p").hide();
+			});
+			$(".btn1").click(function(){
+				$("p").show();
+			});
+		});
+		</script>
 		<p>
 			
 		<div id="loaded_data"></div><br> <!--location and style of lists-->
@@ -23,8 +33,8 @@
 		
 		<button onclick="popup()">Add</button>
 		
-		<button onclick="pick()">Cold Call</button>           <!--cold call picks a random name-->
-		<button onclick="uncalled()"> Uncalled</button>
+		<button class="btn1" onclick="pick()">Cold Call</button>           <!--cold call picks a random name-->
+		<button class="btn2" onclick="uncalled()"> Uncalled</button>
 		<p id="call">
 		</p>           <!--displays cold called name-->
 		

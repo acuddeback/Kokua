@@ -8,7 +8,6 @@ function pick() {
 	document.getElementById('call').innerHTML = picked
 }   				       	 //picks element from array
 
-
 function uncalled(){
 	var index=names.indexOf(picked);
 	names.splice(index, 1); //removes name from list here:
