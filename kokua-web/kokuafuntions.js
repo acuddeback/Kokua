@@ -1,8 +1,9 @@
 var studentlist = [
+
 	]; 
 
 function pick() {
-	var picked = studentlist[Math.round(Math.random()*(studentlist.length-1))];
+	var picked = studentlist[Math.round(Math.random()*(studentgenlist.length-1))];
 	document.getElementById('call').innerHTML = picked
 	//picks element from array
 }   				       	 
@@ -14,13 +15,13 @@ function setmaxnum() {
 
 function add_names(){
 	
-	var form = document.getElementById("form1");  								   //receives input
+	var form = document.getElementById("studentnames");  								   //receives input
 	var name = form.elements[0].value;
 	console.log("Got name" + name + " from form");
-	names.push(name); 	//append list here:
+	studentlist.push(name); 	//append list here:
 	localStorage.setItem("class",name);
-	document.getElementById('loaded_data');
-	container.innerHTML += localStorage.getItem("class") + "<br>";  //stop it from printing whole list
+	var container = document.getElementById('loaded_data');
+	container.innerHTML += localStorage.getItem("class") + "<br>"; //stop it from printing whole list
 	
 }
 
@@ -56,7 +57,7 @@ function groupgenerator(){
 	}
 
 //adds students to individual lists
-	for (i=0; i < studentgenlist.length; i++){
+	for (i=0; i < len(studentgenlist); i++){
 		var listindex = getRandomIndex(0, studentgenlist.legth-1);
 		var groupindex = (i % groupnum);
 		grouplist[groupindex].push(studentlist[listindex]);
@@ -64,31 +65,17 @@ function groupgenerator(){
 	}
 
 //prints lists in a comprehensive format
-	//creates list to print
-	var printlist = [];
-	// adds to list
-	for (i=0; i < grouplist.length; i++){	
-		printlist.push(groupnumber((i)));
+	for (i=0; i < studentgenlist.length; i++){	
+		print(groupnumber((i)));
 		var index = i; 
 	}
-		for(i=0; i < grouplist[index].length); i++){
-			printlist.push(grouplist[index][i]);
+		for(i=0; i < len(grouplist[index]); i++){
+			print(grouplist[index][i]);
 		}
-	printgroups();	
 }		
-//prints the groups
-function printgroups(){
-	//sets a  new list to be printed
-	var displaylist = ""
-	//adds the old list items to the new with indents for printing
-	for (var i=0; i< printlist.length; ++i){
-		displaylist = displaylist + printlist[i] + '<br>'
-	}
-	var groupcontainer =  document.getElementById('group_container');
-	groupcontainer.innerHTML += displaylist
-}
 
 // form submission using enter key
+
 element.addEventListener("keydown", keyfield, false);
 function keyfield (e) {
    var keyCode = e.keyCode;

@@ -48,33 +48,18 @@
 	<script> 
 	function myFunction(x) {
     x.classList.toggle("change");
-<<<<<<< HEAD
-}	
+}
 </script>
-=======
-}
-	
-	</script>
-	
-	<style> 
-li a {
-    display: block;
-    color: #000;
-    padding: 8px 16px;
-    text-decoration: none;
-}
-
-li a.active {
-    background-color: #53cbed;
-    color: white;
-}
-
-li a:hover:not(.active) {
-    background-color: white;
-    color: #53cbed;
-}
-</style>
-
->>>>>>> adb92bb86af7bb0b093965ebf60605ca00dd5c87
-	</body>
+<form id="studentnames">
+	Type your student's name: <input type="text" name = "studentname"/>                  <!--receives input-->
+</form>
+<button onclick="add_names()">Submit</button>            <!--submit data-->
+<div id="loaded_data"></div> <!--location and style of lists-->
+<form id="maxnumber">
+	What is the maximum number of students you want in a group? <input type="text" name="maxnumber" />
+</form>		
+<button onclick = "setmaxnum()">Submit</button>
+<button onclick = "groupgenerator()">Create groups</button>
+<div id="group_container" style="width: 50%; height:97%; float:right;"></div> 
+</body>
 </html>
