@@ -24,23 +24,7 @@
 				Student name: <input type="text" name = "user's name"/>                  <!--receives input-->
 			</form><br>
 			<button onclick="add_names()">Submit</button>            <!--submit data-->
-		<input type="text" id="txtSearch" onkeypress="return searchKeyPress(event);" />
-<input type="button" id="btnSearch" Value="Search" onclick="add_names();" />
-
-<script>
-function searchKeyPress(e)
-{
-    // look for window.event in case event isn't passed in
-    e = e || window.event;
-    if (e.keyCode == 13)
-    {
-        document.getElementById('btnSearch').click();
-        return false;
-    }
-    return true;
-}
-</script>
-
+		
 		<button onclick="pick()">Cold Call</button>           <!--cold call picks a random name-->
 
 		<p id="call">
