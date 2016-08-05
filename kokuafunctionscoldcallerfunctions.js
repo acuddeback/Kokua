@@ -2,7 +2,6 @@
 var names = [
 
 	];  //sets up list of names
-var maxstudent = ""; //sets up variable for number of students per group
 
 var displaylist = ""; //sets a  new list to be printed
 	
@@ -55,6 +54,7 @@ function popup() {
 
 function popupgroup() {
 	var $maxstudent = prompt("Number of Students per Group:"); //creates pop up	
+	$maxstudent = parseInt($maxstudent);
 	localStorage.setItem("number", $maxstudent); //storing
 	var container = document.getElementById('numberdata');
 	container.innerHTML += localStorage.getItem("number") + "<br>"; //stop it from printing whole list
@@ -76,13 +76,15 @@ function groupnumber(index){
 //makes the group
 function groupgenerator(){
 	var studentgenlist = names;//saves names under different name so you can save the original list AND make changes to it
+	document.write(studentgenlist);
 	var numberofgroups = Math.ceil((studentgenlist.length/$maxstudent)); //sets how many groups you'll need
-	
+	document.write(numberofgroups);
 	for(j = 0; j < numberofgroups; j++) {
 		var individualgroup = [];
-		
+		document.write(individualgroup);
 		for(i = 0; i < $maxstudent; i++) {
 			var oglistindex = getRandomIndex(0, studentgenlist.length-1);
+			document.write(oglistindex);
 			var newgroup = individualgroup.push(studentgenlist[oglistindex]);
 			document.write("Group " + j + " " + newgroup)
 		}
