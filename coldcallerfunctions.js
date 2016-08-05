@@ -29,6 +29,7 @@ function deleteFromList(){
 	localStorage.setItem("class", names);
 	var container = document.getElementById('loaded_data');
 	container.innerHTML = localStorage.getItem("class");
+<<<<<<< HEAD
 	
 	var text = ""; //creates variable that will become what the code actually prints out
 	for(i = 0; i < names.length; i++) { //iterates through name list to do breaks
@@ -47,3 +48,7 @@ function popup() {
 	var container = document.getElementById('loaded_data');
 	container.innerHTML += localStorage.getItem("class") + "<br>"; //stop it from printing whole list
 }
+=======
+}
+
+>>>>>>> 327094b7d2a5a4478f60e68a0b0cd66356eac42d

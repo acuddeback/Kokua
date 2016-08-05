@@ -3,6 +3,7 @@ var names = [
 	]; 
 
 function pick() {
+<<<<<<< HEAD
 	
 	var picked = names[Math.round(Math.random()*(names.length-1))];
 	document.getElementById('call').innerHTML = picked
@@ -32,4 +33,18 @@ function deleteFromList(){
 	container.innerHTML = localStorage.getItem("class");
 	
 	
+=======
+	var picked = names[Math.round(Math.random()*(names.length-1))];
+	document.getElementById('call').innerHTML = picked
+}   				       	 //picks element from array
+
+function add_names(){
+	var form = document.getElementById("form1");  								   //receives input
+	var name = form.elements[0].value;
+	console.log("Got name" + name + " from form");
+	names.push(name);               //append list here:
+	localStorage.setItem("class", names);
+	var container = document.getElementById('loaded_data');
+	container.innerHTML = localStorage.getItem("class");
+>>>>>>> 327094b7d2a5a4478f60e68a0b0cd66356eac42d
 }
