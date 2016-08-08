@@ -35,8 +35,20 @@
 			<button onclick="deleteFromList()"> Delete</button>
 		</p>
 		<p>
-			<button onclick="uncalled()"> Uncalled</button>
+			<button onclick="uncalled()"> Uncall</button>
 		</p>
+		
+ <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript"> 
+	google.charts.load("current", {packages:['corechart']});
+    google.charts.setOnLoadCallback(drawChart);
+  </script>
+		<p>
+			<button onclick="drawChart()"> Refresh Graph </button>
+		</p>
+		
+<div id="columnchart_values" style="width: 900px; height: 300px;"></div>
+		
 		
 		<!-- entry boxes
 		<form>
@@ -46,6 +58,7 @@
 		<input type="text" name="lastname">
 		</form>
 		-->
+		
 	</body>
 </html>
 		
