@@ -49,7 +49,7 @@ function uncalled(){
 	container.innerHTML = localStorage.getItem("class");
 	var text = ""; //creates variable that will become what the code actually prints out
 	for(i = 0; i < names.length; i++) { //iterates through name list to do breaks
-		text += names[i] + "<br>"; //adds the break after every word
+		text += names[i][0] + "<br>"; //adds the break after every word
 		container.innerHTML = text; //container.innerHTML gets the code from inside and displays it on the screen
 	}
 }
