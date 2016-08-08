@@ -47,9 +47,10 @@ function groupgenerator(){
 		//adds individual group to master group list 
 		grouplist.push(group);
 	}
-
+//creates variable for repetitions 
+	var repetition = studentgenlist.length;
 //adds students to individual lists
-	for(i=0; i < studentgenlist.length; i++){
+	for(i=0; i < repetition; i++){
 		var listindex = Math.floor(Math.random() * studentgenlist.length);
 		var groupindex = (i % groupnum);
 		grouplist[groupindex].push(studentgenlist[listindex]);
@@ -61,16 +62,11 @@ function groupgenerator(){
 //adds group numbers and individual groups div
 	for(i=0; i < grouplist.length; i++){	
 		PrintThis += "Group " + (i +1) + "<br>";
-		var index = i 
+		var index = i; 
 	
 		for(j=0; j < grouplist[index].length; j++){
 			PrintThis += grouplist[index][j] + "<br>";
 		}
 	}	
 document.getElementById('grouplists').innerHTML = PrintThis;
-}
-
-
-function printgroups(){
-	document.getElementById('grouplists').innerHTML = groupgenerator();
 }
