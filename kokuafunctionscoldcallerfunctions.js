@@ -2,7 +2,7 @@
 var names = [
 
 	];  //sets up list of names
-var maxstudent = ""; //sets up variable for number of students per group
+var $maxstudent = ""; //sets up variable for number of students per group
 
 var displaylist = ""; //sets a  new list to be printed
 	
@@ -77,10 +77,8 @@ function groupnumber(index){
 function groupgenerator(){
 	var studentgenlist = names;//saves names under different name so you can save the original list AND make changes to it
 	var numberofgroups = Math.ceil((studentgenlist.length/$maxstudent)); //sets how many groups you'll need
-	
 	for(j = 0; j < numberofgroups; j++) {
 		var individualgroup = [];
-		
 		for(i = 0; i < $maxstudent; i++) {
 			var oglistindex = getRandomIndex(0, studentgenlist.length-1);
 			var newgroup = individualgroup.push(studentgenlist[oglistindex]);
