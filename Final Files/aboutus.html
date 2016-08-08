@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+
+<link rel="stylesheet" href="style.css">
+
+<head>
+		<title>Kokua</title> <!-- slide out menu on left side -->
+		<link rel="stylesheet" href="other_style.css">
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Arvo">
+		<meta name= "viewport" content="width-device-width, initial-scale=1">
+		
+	</head>
+	
+	
+	<body class="menu">
+		<header>
+			<a href="#" class = "menu-toggle"><div class="container" onclick="myFunction(this)">
+					<div class="bar1"></div>
+					<div class="bar2"></div>
+					<div class="bar3"></div>
+					</div></a>
+			<nav class="menu-side">
+				<ul>
+  <center><li><a class="active" href="#KOKUA">KOKUA</a></li>
+  <br><br><li><a href="home.html">home</a></li><br><br>
+  <li><a href="coldcaller.html">cold caller</a></li><br><br>
+  <li><a href="groupgenerator.html">group generator</a></li><br><br>
+  <li><a href="comments.html">comments</a></li><br><br>
+  <li><a href="aboutus.html">about us</a></li><br><br></center>
+</nav>
+<h6>About Us</h6>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/4 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+       
+      
+</style>
+<body>
+<center>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 4</div>
+  <img src="4.jpg" style="width:75%">
+  <div class="text">Girls Who Code</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 4</div>
+  <img src="3.jpg" style="width:75%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+  <img src="2.jpg" style="width:75%">
+  <div class="text"></div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+  <img src="1.jpg" style="width:75%">
+  <div class="text"></div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+</center>
+</body>
+
+	<center>	
+		<p> Our names are Christina, Zoe, Cindy, Jessica and Anna, we are from the Girls Who Code Summer Immersion Program 2016</p>
+		<h3> Kokua translates from a Hawaiian word for mutual assistance or pitching in, also may be used to describe  general assistance/help (Dictionary).</h3>
+		<p> This educational website provides educators with cold callers that randomly call a students name and a group generator to randomly sort a group together all-in-one, providing group collaborations and contributions.</p></center>
+</ul>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script>
+		(function() { 
+			var body = $('body');
+			$('.menu-toggle').bind('click', function() {
+				body.toggleClass('menu-open');
+				return false;
+			
+			});	
+		})();
+		
+	</script>
+	
+	<script> 
+	function myFunction(x) {
+    x.classList.toggle("change");
+}
+	
+	</script>
+	
+	<style> 
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: #53cbed;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: white;
+    color: #53cbed;
+}
+</style>
+
+	</body>
+	
+	<head>
+<style>
+head {
+    
+    transition: background-color 20s;
+}
+
+button.accordion {
+    background-color: rgba(0,0,0,0.2);
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: background-color .5s;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: rgba(0,0,0,0.3);
+}
+
+button.accordion:after {
+    content: '\02795';
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2796";
+}
+
+div.panel {
+    padding: 0 18px;
+    
+    max-height: 0;
+    overflow: hidden;
+    transition:  background-color .3s;
+	
+    opacity: 25%;
+}
+
+div.panel.show {
+    opacity: 20;
+    max-height: 500px;
+}
+</style>
+</head>
+</h5>
+<body>
+
+
+<button class="accordion">Christina</button>
+<div class="panel">
+  <p>Christina Berger is a rising senior from Lexington, Massachusetts and currently attends Lexington High School. She contributed to the front end of the final project using skills in HTML, Javascript, and CSS. Growing up in a family programmers, Christina has been geared towards STEM and the arts from the beginning of High School. When she is not coding, you can find her running cross-country, spending time in her school's art wing, or journaling. Girls Who Code has provided Christina mentors, resources, and opportunities in Computer Science that will help her in the future.</p>
+</div>
+
+<button class="accordion">Jessica</button>
+<div class="panel">
+  <p>Jessica Carvalho is a rising junior from Everett, Massachusetts and currently attends Everett High School. She is responsible for the front-end components of the website using HTML, Javascript, and CSS. Since freshman year of high school, she decided Computer Science was the perfect major for her, combining her math skills and interests in art and design. Girls Who Code was the culmination of these two areas. In just seven weeks, Girls Who Code has given her the skills and resources to pursue Computer Science.</p>
+</div>
+
+<button class="accordion">Zoe</button>
+<div id="foo" class="panel">
+  <p>Zoe Weiss is a rising senior from Newton, Massachusetts and currently attends Gann Academy.  Zoe is responsible for the back-end part components of the website, specifically the cold caller functions, using mostly JavaScript and some HTML/CSS.  Since Zoe first started programming on her calculator freshman year, she knew that she wanted to pursue a career in computer science.  Zoe is excited to keep learning about computer science and anticpates taking her new skills from Girls Who Code back to her high school and beyond.  </p>
+</div>
+
+<button class="accordion">Cindy</button>
+<div id="foo" class="panel">
+  <p>Cindy Zhang is a rising senior from Belmont, Massachusetts and current attends Belmont High School (go Marauders!).  She collaborated with Zoe on the back-end components of the website for the cold caller, which is written in HTML and Javascript. She is also responsible for the login functionality of the website which allows users to save class lists and generate graphs on cold calling and group formations.  Throughout high school, she has focused on STEM subjects and was first exposed to programming in junior year.  Thanks to the Girls Who Code Summer Immersion program, she has gained experience in a variety of coding languages such as Python, C++, HTML, CSS, and Javascript.  Cindy plans on pursuing Computer Science in college, her dream school being MIT.</p>
+</div>
+
+<button class="accordion">Anna</button>
+<div id="foo" class="panel">
+  <p>Anna Cuddeback is a rising junior in high school from Medford, Massachusetts. Being homeschooled, she takes dual-enrollment classes at Middlesex Community College, and hopes to study Psychology and Computer Science in college. Anna began programming in January of her sophomore year, and is responsible for the group generator function of the website, written primarily in JavaScript.</p>
+</div>
+
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function(){
+        this.classList.toggle("active");
+        this.nextElementSibling.classList.toggle("show");
+  }
+}
+</script>
+
+		<center><h6>
+<img src="gwcc.jpg" alt="gwc" style="width:350px;height:100px;">
+</h6></center>
+
+</body>
+	<p><center><a href="https://icons8.com">Icon pack by Icons8</a></center></p>
+	
+</html>
