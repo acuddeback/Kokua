@@ -1,6 +1,9 @@
 var studentlist = [];
 var groupnum = 0;
 var maxstudent = 0;
+//creates list of groups
+var grouplist = [];
+
 function popupgroup() {
 	var input = prompt("Number of Students per Group:"); //creates pop up	
 	maxstudent = Number(input);
@@ -33,39 +36,41 @@ function groupnumber(index){
 
 //defines function to generate groups
 function groupgenerator(){
+	grouplist = [];
 	var studentgenlist = studentlist; 
 	groupnum = Math.ceil(studentgenlist.length/maxstudent);
 
-//creates list of groups
-	var grouplist = [];
 
 //creates individual group list
 	for(i = 0; i < groupnum; i++){
-		var group = [] ;
+		var group = [];
 		//adds individual group to master group list 
 		grouplist.push(group);
 	}
 
 //adds students to individual lists
 	for(i=0; i < studentgenlist.length; i++){
-		var listindex = getRandomIndex(0, studentgenlist.length -1);
+		var listindex = Math.floor(Math.random() * studentgenlist.length);
 		var groupindex = (i % groupnum);
 		grouplist[groupindex].push(studentgenlist[listindex]);
 		studentgenlist.splice(listindex, 1);
 	}
-	
-var printlist = [];
 
-localStorage.setItem("groups", printlist); //storing
-var container = document.getElementById('grouplists');
-//prints lists in a comprehensive format
-	for(i=0; i < grouplist.legth; i++){	
-		container.innerHTML += localStorage.getItem(groupnumber(i));
-	}
-		for(j=0; j < grouplist[i].length; j++){
-			container.innerHTML += localStorage.getItem(grouplist[i][j]);
+//sets div to variable
+	var PrintThis = "";
+//adds group numbers and individual groups div
+	for(i=0; i < grouplist.length; i++){	
+		PrintThis += "Group " + (i +1) + "<br>";
+		var index = i 
+	
+		for(j=0; j < grouplist[index].length; j++){
+			PrintThis += grouplist[index][j] + "<br>";
 		}
-	
+	}	
+document.getElementById('grouplists').innerHTML = PrintThis;
+}
 
 
-}	
+function printgroups(){
+	document.getElementById('grouplists').innerHTML = groupgenerator();
+}
