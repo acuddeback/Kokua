@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<link rel="stylesheet" href="style.css">
+
+
+	<head>
+		<title>Kokua</title> <!-- slide out menu on left side -->
+		<link rel="stylesheet" href="other_style.css">
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Arvo">
+		<meta name= "viewport" content="width-device-width, initial-scale=1">
+		
+	</head>
+	
+	
+	<body class="menu">
+		<header>
+			<a href="#" class = "menu-toggle"><div class="container" onclick="myFunction(this)">
+					<div class="bar1"></div>
+					<div class="bar2"></div>
+					<div class="bar3"></div>
+					</div></a>
+			<nav class="menu-side">
+				<ul>
+  <center><li><a class="active" href="#KOKUA">KOKUA</a></li>
+  <br><br><li><a href="home.html">home</a></li><br><br>
+  <li><a href="http://localhost/kokua/test_database.php">login/logout</a></li><br><br>
+  <li><a href="coldcaller.html">cold caller</a></li><br><br>
+  <li><a href="groupgenerator.html">group generator</a></li><br><br>
+  <li><a href="comments.html">comments</a></li><br><br>
+  <li><a href="aboutus.html">about us</a></li><br><br>
+  </center>
+</nav>
+		<center><h5>Kokua</h5></center>
+<!-- Apple icon by Icons8 -->
+
+<p><center><img class="icon icons8-Apple" src="data:image/png;base64,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" width="200" height="200"></center></p>
+
+		
+		
+		
+		<center><h2> The ultimate teacher's assistant for you and your classroom!</h2>
+		<h4>Linking Eductation with Innovation</h4></center>
+</ul>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script>
+		(function() { 
+			var body = $('body');
+			$('.menu-toggle').bind('click', function() {
+				body.toggleClass('menu-open');
+				return false;
+			
+			});	
+		})();
+		
+	</script>
+	
+	<script> 
+	function myFunction(x) {
+    x.classList.toggle("change");
+}
+	
+	</script>
+	
+	<style> 
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: #53cbed;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: white;
+    color: #53cbed;
+}
+</style>
+
+	</body>
+	
+	</html>
