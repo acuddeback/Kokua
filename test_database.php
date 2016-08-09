@@ -42,14 +42,18 @@
 			}
 			else{
 				echo "<h1>Error</h1>";
-				echo "<p>your account could not be found</p>";
+				echo "<p>Uh-oh, your account could not be found.  Please check your username and password.</p>";
+				//session_destroy();
+				//$_SESSION['loggedIn'] = false;
+				//header("Location: test_database.php");
 			}
+			
 		}
 		else{
 			?>
 			
 		<h1>Sign In!</h1>
-		<a href ="insert.php";>Sign Up</a>
+		<a href ="sign_up.php";>Sign Up</a>
 		<form action = "test_database.php" method = "post" name="loginform" id ="loginform">
 		Username: <input type ="text" name = "username"><br>
 		Password: <input type ="password" name = "password"><br>
