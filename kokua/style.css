@@ -7,7 +7,12 @@ background: linear-gradient(to left,  rgba(255,255,122,1) 0%,rgba(79,226,192,1) 
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffff7a', endColorstr='#53cbed',GradientType=1 ); /* IE6-9 */
  );
 }
+p {padding:0.5px 100px;}
+
 h6 {color:white; text-align: center; font-size: 40px; font-family:'Arvo';}
+
+h3 {padding:0.5px 100px;}
+
 .menu {
 	overflow-x:hidden;
 	position:relative;
@@ -134,4 +139,3 @@ font-size:20;}
     margin: 4px 2px;
     cursor: pointer;
 }
-

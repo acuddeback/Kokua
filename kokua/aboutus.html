@@ -15,9 +15,11 @@
 	<body class="menu">
 		<header>
 			<a href="#" class = "menu-toggle"><div class="container" onclick="myFunction(this)">
+					
 					<div class="bar1"></div>
 					<div class="bar2"></div>
 					<div class="bar3"></div>
+					
 					</div></a>
 			<nav class="menu-side">
 				<ul>
@@ -29,7 +31,7 @@
   <li><a href="comments.html">comments</a></li><br><br>
   <li><a href="aboutus.html">about us</a></li><br><br></center>
 </nav>
-<h6>About Us</h6>
+<h6>about us</h6>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -81,9 +83,9 @@ body {font-family: Verdana,sans-serif;}
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
+  -webkit-animation-duration: 1s;
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 1s;
 }
 
 @-webkit-keyframes fade {
@@ -111,24 +113,24 @@ body {font-family: Verdana,sans-serif;}
 <div class="mySlides fade">
   <div class="numbertext">1 / 4</div>
   <img src="4.jpg" style="width:75%">
-  <div class="text">Girls Who Code</div>
+  <div class="text"></div>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">2 / 4</div>
   <img src="5.jpg" style="width:75%">
-  <div class="text"></div>
+  <div class="text">standing at Akamai headquarters</div>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">3 / 4</div>
   <img src="2.jpg" style="width:75%">
-  <div class="text"></div>
+  <div class="text">sitting in front of window decal</div>
 </div>
 <div class="mySlides fade">
   <div class="numbertext">3 / 4</div>
   <img src="1.jpg" style="width:75%">
-  <div class="text"></div>
+  <div class="text">posing in front of vegetation</div>
 </div>
 
 </div>
@@ -159,16 +161,28 @@ function showSlides() {
     }
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 2000); // Change image every 2 seconds
+    setTimeout(showSlides, 5000); // Change image every 5 seconds
 }
 </script>
 </center>
 </body>
-
+<style>
+<script>
+function layoutHandler(){
+	var styleLink = document.getElementById("pagestyle");
+	if(window.innerWidth < 900){
+		$_x=50%
+	} else if(window.innerWidth < 1200){
+		$_x=50%
+	} else {
+	    $_x=30%
+	}
+}
+</style>
 	<center>	
-		<p> Our names are Christina, Zoe, Cindy, Jessica and Anna, we are from the Girls Who Code Summer Immersion Program 2016</p>
-		<h3> Kokua translates from a Hawaiian word for mutual assistance or pitching in, also may be used to describe  general assistance/help (Dictionary).</h3>
-		<p> This educational website provides educators with cold callers that randomly call a students name and a group generator to randomly sort a group together all-in-one, providing group collaborations and contributions.</p></center>
+		<p style= $_x> We are Christina, Zoe, Cindy, Jessica, and Anna from the Girls Who Code 2016 Summer Immersion Program at Akamai Technologies.</p>
+		<h3 style= $_x> Kokua is the Hawaiian word for help or pitching in, and also may be used to describe  general assistance.</h3>
+		<p style= $_x> This website for educators functions as a cold caller that can randomly pick a student out of the class and a group generator that can sort a class into random groups, streamlining student contribution to class discussions and facilitating student collaboration.</p></center>
 </ul>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script>
@@ -267,27 +281,27 @@ div.panel.show {
 <body>
 
 
-<button class="accordion">Christina</button>
+<button class="accordion">Christina Berger</button>
 <div class="panel">
-  <p>Christina Berger is a rising senior from Lexington, Massachusetts and currently attends Lexington High School. She contributed to the front end of the final project using skills in HTML, Javascript, and CSS. Growing up in a family programmers, Christina has been geared towards STEM and the arts from the beginning of High School. When she is not coding, you can find her running cross-country, spending time in her school's art wing, or journaling. Girls Who Code has provided Christina mentors, resources, and opportunities in Computer Science that will help her in the future.</p>
+  <p>Christina Berger is a rising senior from Lexington, Massachusetts and currently attends Lexington High School. She contributed to the front end of the final project using skills in HTML, Javascript, and CSS. Growing up in a family programmers, Christina has been geared towards STEM and the arts since the beginning of high school. When she is not coding, you can find her running cross country, spending time in her school's art wing, or journaling. Girls Who Code has provided Christina with mentors, resources, and opportunities in Computer Science that will help in the future.</p>
 </div>
 
-<button class="accordion">Jessica</button>
+<button class="accordion">Jessica Carvalho</button>
 <div class="panel">
-  <p>Jessica Carvalho is a rising junior from Everett, Massachusetts and currently attends Everett High School. She is responsible for the front-end components of the website using HTML, Javascript, and CSS. Since freshman year of high school, she decided Computer Science was the perfect major for her, combining her math skills and interests in art and design. Girls Who Code was the culmination of these two areas. In just seven weeks, Girls Who Code has given her the skills and resources to pursue Computer Science.</p>
+  <p>Jessica Carvalho is a rising junior from Everett, Massachusetts and currently attends Everett High School. She is responsible for the front end components of the website coded in HTML, Javascript, and CSS. Since freshman year of high school, she decided Computer Science was the perfect major for her, combining her math skills and interests in art and design. Girls Who Code was the culmination of these two areas. In just seven weeks, Girls Who Code has given her the skills and resources to pursue Computer Science.</p>
 </div>
 
-<button class="accordion">Zoe</button>
+<button class="accordion">Zoe Weiss </button>
 <div id="foo" class="panel">
-  <p>Zoe Weiss is a rising senior from Newton, Massachusetts and currently attends Gann Academy.  Zoe is responsible for the back-end part components of the website, specifically the cold caller functions, using mostly JavaScript and some HTML/CSS.  Since Zoe first started programming on her calculator freshman year, she knew that she wanted to pursue a career in computer science.  Zoe is excited to keep learning about computer science and anticpates taking her new skills from Girls Who Code back to her high school and beyond.  </p>
+  <p>Zoe Weiss is a rising senior from Newton, Massachusetts and currently attends Gann Academy.  Zoe is responsible for the back-end part components of the website, specifically the cold caller functions, using mostly JavaScript and some HTML/CSS.  Since Zoe first started programming on her calculator freshman year, she knew that she wanted to pursue a career in Computer Science.  Zoe is excited to keep learning about Computer Science and anticpates taking her new skills from Girls Who Code back to her high school and beyond.  </p>
 </div>
 
-<button class="accordion">Cindy</button>
+<button class="accordion">Cindy Zhang</button>
 <div id="foo" class="panel">
-  <p>Cindy Zhang is a rising senior from Belmont, Massachusetts and current attends Belmont High School (go Marauders!).  She collaborated with Zoe on the back-end components of the website for the cold caller, which is written in HTML and Javascript. She is also responsible for the login functionality of the website which allows users to save class lists and generate graphs on cold calling and group formations.  Throughout high school, she has focused on STEM subjects and was first exposed to programming in junior year.  Thanks to the Girls Who Code Summer Immersion program, she has gained experience in a variety of coding languages such as Python, C++, HTML, CSS, and Javascript.  Cindy plans on pursuing Computer Science in college, her dream school being MIT.</p>
+  <p>Cindy Zhang is a rising senior from Belmont, Massachusetts and currently attends Belmont High School (go Marauders!).  She coded the back-end components of the cold caller, which is written in HTML and Javascript. She is also responsible for the login functionality of the website which allows users to save class lists and generate graphs on cold calling and group formations.  Throughout high school, she has focused on STEM courses and was first exposed to programming in junior year.  Thanks to the Girls Who Code Summer Immersion program, she has gained experience in a variety of coding languages such as Python, C++, HTML, CSS, and Javascript.  Cindy plans on pursuing Computer Science in college, her dream school being MIT.</p>
 </div>
 
-<button class="accordion">Anna</button>
+<button class="accordion">Anna Cuddeback</button>
 <div id="foo" class="panel">
   <p>Anna Cuddeback is a rising junior in high school from Medford, Massachusetts. Being homeschooled, she takes dual-enrollment classes at Middlesex Community College, and hopes to study Psychology and Computer Science in college. Anna began programming in January of her sophomore year, and is responsible for the group generator function of the website, written primarily in JavaScript.</p>
 </div>
